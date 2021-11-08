@@ -59,12 +59,15 @@
         <!--Ventana modal-->
         <div class="modal" id="modalv">
             <header>
-                <h4>Formulario modal</h4>
+                <h4>Formulario registro</h4>
             </header>
             <section id="formulario">
-                    <input class="entrada" type="text" id="name" placeholder="nombre">
+                    <input class="entrada" type="text" id="nombre" placeholder="nombre">
+                    <input class="entrada" type="text" id="apellido" placeholder="apellido">
+                    <input class="entrada" type="text" id="telefono" placeholder="telefono">
                     <input class="entrada" type="text" id="email" placeholder="correo">
-                    <input class="entrada" type="text" id="tel" placeholder="telefono">
+                    <input class="entrada" type="text" id="usuario" placeholder="usuario">
+                    <input class="entrada" type="password" id="password" placeholder="contraseña">
                     <button class="botonM" id="submit" type="submit" onclick='enviar()'>enviar</button>
                     <button class="botonM" id="cerrar" onclick='cerrar();'>cerrar</button>
             </section>
@@ -151,6 +154,8 @@
             <div class="pop" id="whatsapp">
                 <a href="https://wa.me/+573057643395">W</a>
             </div>
+
+            <div class="pop" id="agregar" onclick="agegar();">+</div>
 
 </body>
 </html>

@@ -12,7 +12,8 @@ body{
     width:100%;
     height: 100%;
     /*background:rgba(0, 247, 255, 0.164);*/
-    background:  rgb(44, 44, 44);
+    background:  rgba(143, 226, 252, 0.555);
+    /*background-image: url("assets/fondo.jpg");*/
 }
 
 nav{
@@ -90,16 +91,16 @@ nav{
 }
 
 .modal{
-    background-color: rgb(44, 44, 44);;
+    background-color: rgb(44, 44, 44);
     position: fixed;
     width: 350px;
     padding: 30px;
-    margin-left: 30%;
-    margin-top: 5%;
     border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.39);
     z-index: 2;
+    right: 760px;
+    top: 253px;
 }
 
 /*
@@ -133,6 +134,10 @@ nav{
     border-radius: 4px;
 }
 
+.entrada:focus{
+    background: rgb(44, 44, 44);
+}
+
 .modal h4{
     color:gray;
     font-size: 22px;
@@ -163,8 +168,7 @@ nav{
 #contenedor_principal{
     background:rgb(255, 255, 255);
     margin: 0 auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 60%;
     padding: 50px;
     box-shadow: 4px 5px 20px rgb(0, 0, 0);
     border-radius: 4px;
@@ -205,6 +209,16 @@ p{
     background: rgb(204, 161, 247);
 }
 
+#boton-agregar{
+    background:white;
+    position:fixed;
+    left: 94%;
+    top: 90%;
+    padding:20px;
+    border-radius: 60px;
+    box-shadow: 1px 2px 3px gray;
+}
+
 .pop{
     background:white;
     position:fixed;
@@ -237,3 +251,11 @@ p{
 .pop a{
     margin:5px;
 }
+
+#agregar{
+    text-align: center;
+    width:60px;
+    left: 94%;
+    top: 60%;
+}
+

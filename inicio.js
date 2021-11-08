@@ -16,11 +16,34 @@ function cerrar(){
 
 function enviar(){
     let datos={
-        nombre: $("#name").val(),
-        correo: $("#email").val(),
-        telefono: $("#tel").val(),
+        admin: 0,
+        usuario: $("#usuario").val(),
+        password: $("#password").val(),
+        nombre: $("#nombre").val(),
+        apellido:$("#apellido").val(),
+        email: $("#email").val(),
+        telefono: $("#telefono").val(),
     }
+
     let datosPeticion = JSON.stringify(datos);
-    $("#modalv").hide(500);
     alert(datosPeticion);
+    $.ajax({
+        url:"http://localhost:8080/api/Usuarios/save",
+        data : datosPeticion,
+        type: 'POST',
+        contentType:"application/JSON",
+
+        success: function (respuesta) {
+            alert(datosPeticion);
+            console.log(respuesta);
+            alert("usuario registrado con exito! ")
+        },
+
+        error: function (xhr, status) {
+            alert("Error peticion POST..." + status );
+        }
+    });
+
+    $("#modalv").hide(500);
+
 }
